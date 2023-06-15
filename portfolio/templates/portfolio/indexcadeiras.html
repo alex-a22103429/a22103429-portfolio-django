@@ -1,0 +1,88 @@
+{% extends 'portfolio/layout.html' %}
+
+<!DOCTYPE html>
+<html>
+        {% load static %}
+
+  {% block main %}
+
+ <script  src="{% static 'portfolio/js/dark.js' %}"> </script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<body style="background-image:url('{% static 'portfolio/images/bussiness.avif' %}');">
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <a id="home"></a>
+    <div class="parallax-wrapper">
+      <div class="container">
+        <button class="light-mode-button" aria-label="Toggle Light Mode"
+          onclick="toggle_light_mode1()">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="content1">
+        <article>
+          <p><p>
+              <p id="demo"></p>
+
+              <script>
+                    const d = new Date();
+                    document.getElementById("demo").innerHTML = d;
+                    </script>
+              <h2>ETCS PASSED</h2>
+              1ºYEAR
+              <br>
+              Discrete Mathematics
+              <br>
+              Mathematics I
+              <br>
+              Mathematics II
+              <br>
+              Digital Systems
+              <br>
+              Fundamentals of Physics
+              <br>
+              Algorithms and Data Structures
+              <br>
+              Behavioral Competencies
+              <br>
+              Linear Algebra
+              <br>
+              Programming Languages I
+              <br>
+              Programming Fundamentals
+              <br>
+              2ºYEAR
+              <br>
+              Databases
+              <br>
+              Programming Languages II
+              <br>
+              Operating Systems
+              <br>
+              Signals and Systems
+              <br>
+              <br>
+
+
+            </p>
+
+
+          </article>
+        </div>
+        <br>
+
+      </div>
+
+      <a id="autor"></a>
+
+
+    </body>
+{% endblock %}
+  </html>

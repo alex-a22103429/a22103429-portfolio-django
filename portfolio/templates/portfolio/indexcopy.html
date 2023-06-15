@@ -1,0 +1,96 @@
+
+
+ {% extends 'portfolio/layout.html' %}
+
+
+{% load static %}
+
+
+
+
+{% block main %}
+
+    {% block content %}
+        <body style="background-image:url('{% static 'portfolio/images/max.jpg' %}');">
+
+        <link href="{% static 'portfolio/css/estilos1.css' %}" rel="stylesheet">
+        <script src="{% static 'portfolio/js/java.js' %}"></script>
+        <br>
+
+        <br>
+
+        <br>
+        <a id="home"></a>
+        <div class="parallax-wrapper">
+            <div class="container">
+                <button class="light-mode-button" aria-label="Toggle Light Mode"
+                        onclick="toggle_light_mode1()">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="content1">
+
+
+                <p>
+                <p>
+                <p id="demo"></p>
+
+                <script>
+                    const d = new Date();
+                    document.getElementById("demo").innerHTML = d;
+                </script>
+                There are no limits to what you can accomplish, except the limits
+                you place on your own thinking.
+                <br>
+                Brian Tracy</p>
+            </div>
+
+            <br>
+            <div class="content1">
+
+                <p>
+                <h2>Interests and hobbies</h2>
+                <br>
+                I love watching car racing formula 1.
+                I often play many video games related to car racing or strategy
+                games but i still prefer to go outside go out with friends and
+                almost never miss my tennis pratices.
+                I am still a bit of old school on 80 % of the games.
+                My Interests are really related to Artificial intelligence and
+                hacking/security.
+                </p>
+
+
+            </div>
+            <br>
+            <div class="content1">
+
+
+                <p>
+                <h2>Motivations</h2>
+                <br>
+                How incredible tesla is devoloping their cars and shows the level
+                of
+                code programming.
+                And how IA are getting bigger and we cant control them today thats
+                scary but really inovating.
+                </p>
+
+            </div>
+            <br>
+            <div class="content1">
+
+                <p>
+                <h2>What I liked the most to learn so far</h2>
+                <br>
+                I loved to learn java and C.
+                </p>
+
+            </div>
+
+ </div>
+            <a id="autor"></a>
+        </body>
+    {% endblock %}
+{% endblock %}

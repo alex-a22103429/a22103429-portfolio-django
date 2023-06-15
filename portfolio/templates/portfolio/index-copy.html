@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         {% load static %}
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Digital 📁</title>
+        <link href="{% static 'portfolio/css/estilostest.css'%}" rel="stylesheet">
+        <script  src="test.js" defer> </script>
+        <script src="https://kit.fontawesome.com/453cb8d071.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alexandre Santos">
+        <meta name="description" content="Portfolio Digital">
+        <meta name="keywords" content="palavras chave">
+        <link rel="shortcut icon" href="images/cap.png">
+
+    </head>
+    
+    <body>
+      <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content7">
+      <div class="logo"><a href="#">Menu </a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" class="desktop-link">Portfolio</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Portfolio</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li><a href="#">Drop Menu 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <a >Alexandre Santos 🧑‍🎓</a>
+    </nav>
+  </div>
+
+
+
+
+            <div class="topnav">
+              <a href="indexcopy.html" target="blank_">Hero Page</a>
+              <a href="indexcalculadora.html">Calculator</a>
+              <a href="indexcadeiras.html">ETCS</a>
+              <a href="indexpresentation.html">Presentation Letter</a>
+                <a class="active" href="#home">Home</a>
+            <a href="#TECHNICALSKILLS">Technical Skills</a>
+            <a href="#about">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#getintouch">Get in Touch</a>
+            <a href="#autor">Authors</a>
+               
+                <div class="topnav-right">
+                  
+                  <a >Alexandre Santos 🧑‍🎓</a>
+                </div>
+              </div>
+           
+              <br>
+           
+          
+
+              <a id="home"></a>
+        <div class="parallax-wrapper">
+          
+          <div class="container">
+            
+            <audio class="bgAudio" controls autoplay loop>
+              <source src="images/EziosFamily.mp3" />
+            </audio>
+            
+       
+            <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+                  <span></span>
+                  <span></span>
+              </button>
+          
+            </div>
+ 
+            <div class="content5">
+              <a id="about"></a>  
+               
+                <br>
+                <p>
+
+                  <h1> About Me</h1>
+                  Hi ! Welcome to my portfolio.
+                  <br>I am currently a student at Lusofona University .
+                  <br>Course: Computer Science and engineering
+                  <br>Explore my work below, and contact me directly to learn more</p>
+            </div>
+          
+            
+            
+        </div>
+      
+            <a id="TECHNICALSKILLS"></a>
+        <div class="regular-wrapper">
+            <div class="content1">
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                <script>
+                    var xValues = ["JAVA", "SQL", "C", "C#", "Octave/Matlab","Kotlin","Python"];
+                    var yValues = [9, 9, 9, 6, 8,9,7,3,2,1];
+                    var barColors = ["red", "green","aqua","orange","brown","pink","purple"];
+                    
+                    new Chart("myChart", {
+                      type: "bar",
+                      data: {
+                        labels: xValues,
+                        datasets: [{
+                          backgroundColor: barColors,
+                          data: yValues
+                      
+                        }]
+                      },
+                      options: {
+                        legend: {display: false},
+                        title: {
+                          display: true,
+                          text: "Technical Skills",
+                          
+                        }
+                      }
+        
+                    });
+                    
+                    </script>
+             
+            </div>
+
+            
+        </div>
+        <div class="regular-wrapper1">
+          <div class="content2">
+            <a id="projects"></a>
+      <h1>Projects</h1>
+              <p><h3>Simulador Solar</h3>
+                <img src="images/painelsolar1.png" alt="Cinque Terre" bottom="0" right="0">
+              
+                <br>
+                In this project, I worked with a group of people
+                <br>
+                https://github.com/RavingSombra/SimuladorSolar
+              
+                <br>
+                <br>
+                
+                <h3>Calculator</h3>
+                <img src="images/calculadora1.png" alt="Cinque Terre" bottom="0" right="0">
+                <br>
+                Normal Calculator
+                <br>
+                https://github.com/alex-a22103429/Calculator
+                <br>
+                <br>
+                
+              <h3>  Age and Categories in Sports</h3>
+              <img src="images/age1.png" alt="Cinque Terre" bottom="0" right="0">
+              <br>
+                <br>    
+              Which category is better for your age
+                  <br>
+                  https://github.com/alex-a22103429/Age-and-Categories
+                  <br>
+                  <br>
+                 <h3> Billboard</h3>
+                 <img src="images/billboard1.png" alt="Cinque Terre" bottom="0" right="0">
+                    <br>
+                    https://github.com/alex-a22103429/Billboard   
+                    <br>
+                  <br>
+                                </p>
+          </div>
+
+          
+      </div>
+ 
+      <div class="regular-wrapper2">
+        <div class="content5">  
+        
+            <p>
+              <h1>Programação Web</h1>
+              Os lab1-lab2-lb3-lb4
+              <br>
+              https://github.com/alex-a22103429/lab2-lab3-lb4
+              <br>
+                https://santosa22103429.pythonanywhere.com/todos/
+              <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+              </svg>
+             
+
+              <div class="animacaodiv"></div>
+    
+              <br>
+
+            </p>
+        </div>
+
+        
+    </div>
+   
+      <div class="regular-wrapper3">
+        <div class="content5">  
+          
+            <p>
+              <h1>School and Formation</h1> 
+              <br>
+              Escola Secundária Arco-Íris , Portela  -
+              2012-2019
+              <br>
+              Universidade Lusófona de Humanidades e Tecnologias , Lisboa  -
+              2019-Presente
+              <br>
+
+            </p>
+        </div>
+        <h1>
+        
+    </div>
+    
+  
+
+    <div class="regular-wrapper4">
+      <div class="content5">  
+        <h1>Personal skills and competences</h1> 
+        <p>
+            <br>
+            
+            - Team spirit
+
+            <br>
+
+              
+            - Organization
+
+            <br>
+
+            - Creative
+
+            <br>
+
+            - Optimistic
+
+            <br>
+
+            - English (level B1)
+            
+            <br>
+
+            - French
+            
+            <br>
+
+            - Portuguese
+            
+     
+            <br>
+
+          </p>
+      </div>     
+  </div>
+ 
+  <a id="getintouch"></a>
+  <div class="regular-wrapper4">
+    <div class="content5">  
+      <h1>Get in Touch</h1> 
+      <p>
+          <br>
+          https://www.linkedin.com/in/alexandre-santos-a26771233/
+
+          <br>
+
+          alex.gama.santos@gmail.com
+
+         
+
+        </p>
+    </div>     
+</div>
+  
+        <a id="autor"></a>
+        <footer class="footer1">
+          <img src="images/logo1.png" alt="Cinque Terre" bottom="0" right="0">
+            <a id="autor"></a>
+            <p>Autor : Alexandre Santos 2023 ULHT</p>
+            <p><a href="mail:alex.gama.santos@gmail.com">alex.gama.santos@gmail.com</a></p>
+        </footer>
+  
+</body>
+
+</html>

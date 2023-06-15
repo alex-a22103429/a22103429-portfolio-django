@@ -1,0 +1,83 @@
+
+
+            {% extends 'portfolio/layout.html' %}
+
+
+{% load static %}
+
+
+
+
+{% block main %}
+
+    {% block content %}
+        <body style="background-image:url('{% static 'portfolio/images/max.jpg' %}');background-repeat: no-repeat;  background-size: cover;">
+
+        <link href="{% static 'portfolio/css/estilos.css' %}" rel="stylesheet">
+        <script src="{% static 'portfolio/js/java.js' %}"></script>
+
+
+              <br>
+           
+              <p>
+                <p id="demo"></p>
+
+                <script>
+                const d = new Date();
+                document.getElementById("demo").innerHTML = d;
+                </script>
+              <a id="home"></a>
+              <div id="ig" style="font-size: 45px;"></div>
+
+              <center>
+                <div class="corpo-calc">    
+                      <input type="text" class="visor" id="visor" readonly="true">
+                  
+                      <input type="button" class="btn" value="C" onclick="limpar()">
+                      <input type="button" class="btn" value="(" onclick="preencher('(');">
+                      <input type="button" class="btn" value=")" onclick="preencher(')');">
+                      <input type="button" class="btn" value="←" onclick="excluir();">
+                      <input type="button" class="btn" value="x" onclick="preencher('x');">
+                  
+                      <input type="button" class="btn-span" value="%" onclick="percent();">
+                   
+                      <input type="button" class="btn" value="7" onclick="preencher(7);">
+                      <input type="button" class="btn" value="8" onclick="preencher(8);">
+                      <input type="button" class="btn" value="9" onclick="preencher(9);">
+                      <input type="button" class="btn" value="÷" onclick="preencher('÷');">
+                  
+                      <input type="button" class="btn" value="4" onclick="preencher(4);">
+                      <input type="button" class="btn" value="5" onclick="preencher(5);">
+                      <input type="button" class="btn" value="6" onclick="preencher(6);">
+                      <input type="button" class="btn" value="-" onclick="preencher('-');">
+                  
+                      <input type="button" class="btn-span" value="√" onclick="razQ();">
+                  
+                      <input type="button" class="btn" value="1" onclick="preencher(1);">
+                      <input type="button" class="btn" value="2" onclick="preencher(2);">
+                      <input type="button" class="btn" value="3" onclick="preencher(3);">
+                      <input type="button" class="btn-span" value="+" onclick="preencher('+');">
+                  
+                      <input type="button" class="btn" value="0" onclick="preencher(0);">
+                      <input type="button" class="btn" value="." onclick="preencher('.');">
+                      <input type="button" class="btn" value="=" onclick="calcular();">
+                  </div>
+              </center>
+
+
+              <div id = calculadora>
+
+                <i>Calculadora</i>
+                <br>
+                <br>
+                <label for="expressao">Insira uma expressão aritmética:</label>
+                <input type="text" id="expressao" name="expressao">
+                <button id="calcular" onclick="calcular1()">Calcular</button>
+                <button id="apagar" onclick="apagarResultado()">Apagar Resultado</button>
+                <div id="resultado"></div>
+                </div>
+        <a id="autor"></a>
+
+</body>
+    {% endblock %}
+{% endblock %}

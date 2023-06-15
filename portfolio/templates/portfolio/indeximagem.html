@@ -1,0 +1,56 @@
+{% extends 'portfolio/layout.html' %}
+
+
+{% load static %}
+
+
+
+
+{% block main %}
+
+    {% block content %}
+    
+  <body style="background-image:url('{% static 'portfolio/images/max.jpg' %}');">
+       <link href="{% static 'portfolio/css/estilos4.css' %}" rel="stylesheet">
+        <script src="{% static 'portfolio/js/imagem.js' %}"></script>
+
+              <br>
+           
+              <p>
+                <p id="demo"></p>
+
+                <script>
+                const d = new Date();
+                document.getElementById("demo").innerHTML = d;
+                </script>
+              <a id="home"></a>
+              <div id="ig" style="font-size: 45px;"></div>
+
+              <i>Imagem Inspiradora</i>
+              <br>
+              <br>
+              
+               <div class="image-container">
+                          <p id="caption" class="white">Default Caption</p>
+                          <p id="caption1" class="white">Default Caption</p>
+                          <p id="caption2" class="white">Default Caption</p>
+                          <p id="caption3" class="white">Default Caption</p>
+                    </a>
+          
+          
+                 </div>
+          
+                 <label for="caption-input" class="white">O que esta imagem o inspira?:</label>
+                  <input type="text" id="caption-input">
+                <button type="button" id="submit-caption" >Submit</button>
+          <br>
+                <label for="caption-input1" class="white">Coloque o nome?:</label>
+                <input type="text" id="caption-input1">
+              <button type="button" id="submit-caption1">Submit</button>
+           
+             </div>
+        <a id="autor"></a>
+
+</body>
+   {% endblock %}
+{% endblock %}

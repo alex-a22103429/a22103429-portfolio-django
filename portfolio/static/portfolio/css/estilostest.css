@@ -1,0 +1,384 @@
+{% load static %}
+{% load staticfiles %}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  font-size: 26px;
+  font-family:  Arial;
+  color: #ffffff;
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x:hidden;
+  overflow-y:auto;
+  background-image:url('../images/max.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-wrapper {
+  width: 100vw;
+  min-height:100vh;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+
+}
+.parallax-wrapper::before {
+  content:"";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transform:translateZ(-1px) scale(2);
+}
+.regular-wrapper {
+  width: 100vw;
+  height:100vh;
+  padding-top:20vh;
+  background-image: url("images/graph.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+}
+.regular-wrapper1 {
+  width: 100vw;
+  height:100vh;
+  padding-top:20vh;
+  margin-bottom: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 4;
+  position: relative;
+  
+}
+.regular-wrapper2 {
+  width: 100vw;
+  height:100vh;
+  padding-top:100px;
+  margin-top: 1000px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+}
+.regular-wrapper3 {
+  width: 100vw;
+  height:100vh;
+  padding-top:20vh;
+  margin-top: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+}
+.regular-wrapper4 {
+  width: 100vw;
+  height:100vh;
+  
+  margin-top: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+}
+.content5 {
+  margin: 0 auto;
+  padding: 100px;
+  width: 80%;
+  background: #0b2f64;
+  word-break: break-all;
+  border-radius: 30px;
+
+}
+.content1 {
+  margin: 0 auto;
+  padding: 100px;
+  width: 80%;
+  background: silver;
+  word-break: break-all;
+  border-radius: 30px;
+
+
+}
+.content2 {
+  margin: 0 auto;
+  padding: 100px;
+  width: 80%;
+  background: rgb(22, 129, 211);
+  word-break: break-all;
+
+}
+.nav{
+  z-index: 1000;
+}
+.navbar {
+    z-index: 1000;
+    height: 10px;
+    width: 100%;
+    background-color: #0a92aa;
+
+}
+.index3{
+  
+  text-align: center;
+  z-index: 5;
+}
+.footer1 {
+  background-color: #333;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #092699;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: rgb(255, 250, 250);
+}
+
+.topnav-right {
+  float: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap');
+
+.bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Sofia Sans', sans-serif;
+  line-height: 1.5;
+  background-color: #000000;
+}
+
+.content {
+  position: relative;
+  top: 30%;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.content__heading {
+  margin-bottom: 24px;
+  color: #FFFFFF;
+  font-size: 44px;
+}
+
+.content__teaser {
+  margin-bottom: 24px;
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+.content__cta {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 48px;
+  color: #FFFF88;
+  font-size: 22px;
+  text-decoration: none;
+  border: solid 4px #FFFF88;
+}
+
+
+
+
+h1 {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+p {
+  max-width: 420px;
+}
+
+a {
+  color: #000000;
+}
+.animacaodiv {
+  width: 100px;
+  height: 100px;
+  background: rgb(71, 185, 251);
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+
+/* Light Mode Button Styles
+--------------------------- */
+
+.light-mode-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  left: 250px;
+  z-index: -1;
+  position: middle;
+  border: 1px solid rgba(230, 4, 4, 0);
+
+
+}
+
+.light-mode-button:focus {
+  outline: none; /* Not ideal for accessibility */
+
+}
+
+.light-mode-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #d6d7db;
+  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+  
+}
+
+.light-mode-button span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 255px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgba(212, 219, 228, 0.4);
+  transition: 0.3s;
+}
+
+/* Light & Dark Mode Styles
+  --------------------------- */
+
+body {
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+  background-color: #141516;
+  color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: #ced4e2;
+  color: #000000;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
+body[light-mode="dark"] a {
+  color: #000000;
+}
+
+body[light-mode="dark"] .content5  {
+  margin: 0 auto;
+  padding: 100px;
+  width: 80%;
+  background-color: #000000;
+
+}
+body[light-mode="dark"] .topnav a.active   {
+  color: rgb(0, 0, 0);
+
+}
+
+body[light-mode="dark"] .content2 {
+  margin: 0 auto;
+  padding: 100px;
+  width: 80%;
+  background: rgb(0, 0, 0);
+
+}
+
+
+  .index100{
+    visibility: visible;
+    z-index: 100000;
+  }
+
+
+.dummy-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.dummy-text h2{
+  font-size: 30px;
+  margin: 5px 0;
+}
