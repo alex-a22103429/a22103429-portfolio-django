@@ -35,5 +35,30 @@ def home7_page_view(request):
 def home8_page_view(request):
 	return render(request, 'portfolio/index1.html')
 
+def home9_page_view(request):
+	return render(request, 'portfolio/index2.html')
+
+def home10_page_view(request):
+	return render(request, 'portfolio/index3.html')
+def home11_page_view(request):
+	return render(request, 'portfolio/index4.html')
+def home12_page_view(request):
+	return render(request, 'portfolio/index5.html')
+def home13_page_view(request):
+	return render(request, 'portfolio/index6.html')
+def home14_page_view(request):
+	return render(request, 'portfolio/index21.html')
+def home15_page_view(request):
+	return render(request, 'portfolio/index31.html')
+def home16_page_view(request):
+	return render(request, 'portfolio/index41.html')
+
+def home17_page_view(request):
+	return render(request, 'portfolio/index51.html')
+
+def home18_page_view(request):
+	return render(request, 'portfolio/index61.html')
+
+
 
 

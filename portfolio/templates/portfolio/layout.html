@@ -3,6 +3,7 @@
 <head>
     {% load static %}
 <link href="{% static 'portfolio/css/estilos2.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'%}">
 </head>
 <body>
 
@@ -35,6 +36,20 @@
               <input type="checkbox" id="show-services">
               <label for="show-services">Work</label>
               <ul>
+                <li><a href="{%  url 'portfolio:home' %}">homePage</a></li>
+                <li><a href="{%  url 'portfolio:indeximagem' %}">Imagemwrite</a></li>
+                      <li><a href="https://a22103429santos.pythonanywhere.com/index1.html">LabsAntigos</a></li>
+          <li><a href="{%  url 'portfolio:indexcadeiras' %}">ETCS</a></li>
+                <li><a href="{%  url 'portfolio:indexpresentation' %}">Presentation Letter</a></li>
+                <li><a href="{%  url 'portfolio:indexcalculadora' %}">Calculator</a></li>
+              </ul>
+            </li>
+                 <li>
+              <a href="#" class="desktop-link">labs</a>
+              <input type="checkbox" id="show-services">
+              <label for="show-services">Work</label>
+              <ul>
+                <li><a href="{%  url 'portfolio:index1' %}">hero page</a></li>
                 <li><a href="{%  url 'portfolio:indeximagem' %}">Imagemwrite</a></li>
                 <li><a href="{%  url 'portfolio:indexcadeiras' %}">ETCS</a></li>
                 <li><a href="{%  url 'portfolio:indexpresentation' %}">Presentation Letter</a></li>

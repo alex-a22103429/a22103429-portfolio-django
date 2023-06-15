@@ -1,10 +1,17 @@
+
 {% extends 'portfolio/layout.html' %}
-
-{% block main %}
-<h3>Titulo</h3>
-<p>texto texto texto texto texto texto texto </p>
-
 {% load static %}
-<img src="{% static 'portfolio/images/imagem.png' %}">
+{% block main %}
+<body>
+        <div >
+        <h2 >{{ post.title }}</h2>
+            <small>Posted at {{ post.date_added }}</small>
+            <p>{{ post.intro }}</p>
 
+        </div>
+
+
+
+<img src="{% static 'portfolio/images/imagem.png' %}">
+</body>
 {% endblock %}

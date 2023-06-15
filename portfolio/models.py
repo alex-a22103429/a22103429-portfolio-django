@@ -2,6 +2,16 @@ from django.db import models
 
 
 # Create your models here.
+
+class Post(models.Model):
+    title = models.CharField(max_length=255)
+    slug = models.SlugField()
+    intro = models.TextField()
+    body = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+    class Meta:
+        ordering = ['-date_added']
+
 class Author(models.Model):
     firstName = models.CharField(max_length=250, null=False)
     lastName = models.CharField(max_length=250)
@@ -43,7 +53,7 @@ class Article(models.Model):
     title = models.CharField(max_length=250, null=False)
     content = models.TextField(max_length=1000, null=False)
     createdAt = models.DateTimeField(auto_now_add=True, null=False)
-    area = models.ForeignKey(Area,null=False,  on_delete=models.CASCADE)
+    area = models.ForeignKey(Area, null=False,  on_delete=models.CASCADE)
     author = models.ManyToManyField(Author, null=False, related_name='article')
 
     def __str__(self):
