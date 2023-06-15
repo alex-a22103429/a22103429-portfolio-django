@@ -9,14 +9,12 @@
 {% block main %}
 
     {% block content %}
-    
-  <body style="background-image:url('{% static 'portfolio/images/max.jpg' %}');">
-       <link href="{% static 'portfolio/css/estilos4.css' %}" rel="stylesheet">
+        <body style="background-image:url('{% static 'portfolio/images/kobe.jpg' %}');">
         <script src="{% static 'portfolio/js/imagem.js' %}"></script>
+        <link href="{% static 'portfolio/css/estilos4.css' %}" rel="stylesheet">
+
 
               <br>
-           
-              <p>
                 <p id="demo"></p>
 
                 <script>
@@ -29,17 +27,17 @@
               <i>Imagem Inspiradora</i>
               <br>
               <br>
-              
+
                <div class="image-container">
                           <p id="caption" class="white">Default Caption</p>
                           <p id="caption1" class="white">Default Caption</p>
                           <p id="caption2" class="white">Default Caption</p>
                           <p id="caption3" class="white">Default Caption</p>
-                    </a>
-          
-          
+
+
+
                  </div>
-          
+
                  <label for="caption-input" class="white">O que esta imagem o inspira?:</label>
                   <input type="text" id="caption-input">
                 <button type="button" id="submit-caption" >Submit</button>
@@ -47,10 +45,17 @@
                 <label for="caption-input1" class="white">Coloque o nome?:</label>
                 <input type="text" id="caption-input1">
               <button type="button" id="submit-caption1">Submit</button>
-           
+
              </div>
         <a id="autor"></a>
+        <footer class="footer1">
+          <img src="images/logo1.png" alt="logo" bottom="0" right="0">
+            <a id="autor"></a>
+            <p>Autor : Alexandre Santos 2023 ULHT</p>
+            <p><a href="mail:alex.gama.santos@gmail.com">alex.gama.santos@gmail.com</a></p>
+        </footer>
 
 </body>
-   {% endblock %}
+
+    {% endblock %}
 {% endblock %}

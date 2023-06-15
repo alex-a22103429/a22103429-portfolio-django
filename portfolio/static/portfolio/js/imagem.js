@@ -8,6 +8,15 @@ const caption2 = document.getElementById('caption2');
 const caption3 = document.getElementById('caption3');
 
 
+
+ function calcular11() {
+    const userInput = inputField.value;
+    caption.textContent = userInput;
+    const expressao = document.getElementById('expressao').value;
+
+  }
+
+
 submitButton.addEventListener('click', function() {
   const userInput = inputField.value;
   caption.textContent = userInput;
