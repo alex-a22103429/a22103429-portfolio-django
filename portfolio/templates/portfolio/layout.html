@@ -2,23 +2,62 @@
 <html>
 <head>
     {% load static %}
-    <link href="{% static 'portfolio/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'portfolio/css/estilos2.css'%}" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div>Título</div>
-    <nav>
-      <a href="">home</a>
-      <a href="">products</a>
-      <a href="">about</a>
-      <a href="">contact</a>
-    </nav>
-  </header>
+
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content7">
+
+          <ul class="links">
+            <li><a href="{%  url 'portfolio:indexcopy' %}">Hero Page</a></li>
+            <li>
+             <a href="{%  url 'portfolio:index' %}">Portfolio</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Portfolio</label>
+              <ul class="index10000">
+                <li><a href="{%  url 'portfolio:index' %}">Portfolio</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#TECHNICALSKILLS">TECHNICALSKILLS</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#autor">Authors</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-link">Work</a>
+              <input type="checkbox" id="show-services">
+              <label for="show-services">Work</label>
+              <ul>
+                <li><a href="{%  url 'portfolio:indeximagem' %}">Imagemwrite</a></li>
+                <li><a href="{%  url 'portfolio:indexcadeiras' %}">ETCS</a></li>
+                <li><a href="{%  url 'portfolio:indexpresentation' %}">Presentation Letter</a></li>
+                <li><a href="{%  url 'portfolio:indexcalculadora' %}">Calculator</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+        <a class="white">Alexandre Santos 🧑‍🎓</a>
+      </nav>
+    </div>
+
 <main>
     {% block main %}
     {% endblock main %}
 </main>
 
-<footer>ULusófona, 2023</footer>
+        <footer class="footer1">
+          <img src="{% static 'portfolio/images/logo1.png' %}" alt="LOGO" bottom="0" right="0">
+          <a id="autor"></a>
+          <p>Autor : Alexandre Santos 2023 ULHT</p>
+          <p><a href="mail:alex.gama.santos@gmail.com">alex.gama.santos@gmail.com</a></p>
+        </footer>
 </body>
 </html>
